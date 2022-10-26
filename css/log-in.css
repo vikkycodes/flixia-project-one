@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family: arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(/images/the-chosen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300vh;
+    width: 100vw;
+}
+
+h2 {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 30px;
+    color: red;
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 255, 0.276);
+}
+
+img {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+input { 
+    height: 100px;
+    width: 600px;
+    border: 3px solid white;
+    border-radius: 10px;
+    background: transparent;
+    padding: 20px;
+    font-size: 40px;
+    color: white;
+}
+
+.text {
+    font-size: 30px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 100px;
+    width: 600px;
+    background-color: red;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.sign_in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="/css/task.css">
+    <link rel="stylesheet" href="/css/normalize .css">
+    <link rel="stylesheet" href="/css/glide.core.min.css">
+    <link rel="stylesheet" href="/css/glide.theme.css">
+</head>
+
+<body>
+    <header>
+        <img id="image__collage" src="/images/image-collage-two.jpg" alt="">
+        <nav>
+            <img class="logo" src="/images/logo.PNG" alt="">
+            <input class="text" type="text" placeholder="Search for your favorite movies">
+            <img class="menu" src="/images/icon-hamburger.svg" alt="">
+        </nav>
+    </header>
+    <div class="seven__days__trial">
+        <h3><span>FREE!!!</span> explore on flixia for a week</h3>
+        <a href="/html/register.html">
+            <p>click here to register</p>
+        </a>
+    </div>
+    <div class="container">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <img src="/images/doctor-strange.jpg" alt="">
+                        <h2>Doctor Strange</h2>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="/images/God's-not-dead.jpg" alt="">
+                        <h2>God's Not Dead</h2>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="/images/restless.jpg" alt="">
+                        <h2>Restless</h2>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="/images/spy-x-family.png" alt="">
+                        <h2>Spy X Family</h2>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="/images/the=school-of-good-and-evil.jpg" alt="">
+                        <h2>The School Of Good And Evil</h2>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="/images/thor-love-and-thunder.jpg" alt="">
+                        <h2>Thor Love And Thunder</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script>
+            new Glide(".glide", {
+                type: 'carousel',
+                perView: 4,
+                focusAt: "center",
+                gap: 20,
+                breakpoints: {
+                    1200: {
+                        perView: 3
+                    },
+                    800: {
+                        perView: 2
+                    }
+                }
+            }).mount();
+        </script>
+    </div>
+    <div class="main">
+        <h2>Why Flixia?</h2>
+        <div class="data">
+            <div class="data_image">
+                <img src="/images/happy man.jpg" alt="">
+            </div>
+            <div class="comment">
+                <h3><span>Flixia</span> is data friendly, you can download favorite movies with a little amount of data,
+                    so as to keep track of your movies</h3>
+            </div>
+        </div>
+        <div class="ads">
+            <div class="comment">
+                <h3>On <span>Flixia</span>, there is no pop-up ads disturbance, you would enjoy a stressless and
+                    enjoyable time exploring our site</h3>
+            </div>
+            <div class="ads_image">
+                <img src="/images/ads.webp" alt="">
+            </div>
+        </div>
+        <div class="tv">
+            <div class="tv_image">
+                <img src="/images/tv.jpg" alt="">
+            </div>
+            <div class="comment">
+                <h3>Run into a new world of fantasy, comedy, action and so on, enjoying quality time with family, as
+                    <span>Flixia</span> made an exclusive list of movies for you
+                </h3>
+            </div>
+        </div>
+        <div class="devices">
+            <div class="comment">
+                <h3><span>Flixia</span> on the go, as you can stream on any device of your choice, do not be limited,
+                    try flixia!</h3>
+            </div>
+            <div class="devices_image">
+                <img src="/images/devices.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="first-footer">
+            <img class="logo" src="/images/logo.PNG" alt="">
+            <div class="social-media">
+                <img class="icon" src="/images/icon-facebook.svg" alt="">
+                <img class="icon" src="/images/icon-pinterest.svg" alt="">
+                <img class="icon" src="/images/icon-instagram.svg" alt="">
+                <img class="icon" src="/images/icon-twitter.svg" alt="">
+            </div>
+        </div>
+
+        <div class="second-footer">
+            <div class="first-ul">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Offers</a></li>
+                </ul>
+            </div>
+            <div class="second-ul">
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="third-footer">
+            <input type="email" placeholder="give us your feedbacks">
+            <div class="go">Email Us</div>
+        </div>
+
+        <p class="copyright">&copy;Copyright 2020. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
