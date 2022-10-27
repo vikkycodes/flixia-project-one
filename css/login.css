@@ -1,90 +1,118 @@
-* {
-    box-sizing: border-box;
-    font-family: arial, Helvetica, sans-serif;
-}
-
 body {
-    background-image: url(/images/the-chosen.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 300vh;
-    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: hsl(233, 12%, 13%);
 }
 
 h2 {
-    font-size: 100px;
     color: white;
     text-align: center;
+    font-size: 30px;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 15px;
 }
 
-p {
-    font-size: 30px;
-    color: red;
-    font-weight: 900;
+.bg_image {
+    height: 100%;
+    width: 50%;
 }
 
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.box {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    height: 80%;
-    width: 80%;
+    gap: 20px;
+    height: 90%;
+    width: 70%;
     border-radius: 10px;
-    background-color: rgba(0, 255, 255, 0.276);
-}
-
-img {
-    width: 50%;
+    background-color: hsl(12, 88%, 59%);
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 10px;
+    width: 70%;
 }
 
-input { 
-    height: 100px;
-    width: 600px;
-    border: 3px solid white;
-    border-radius: 10px;
+input {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background: transparent;
-    padding: 20px;
-    font-size: 40px;
     color: white;
+    padding: 0 70px 0 20px;
+    border: 3px solid white;
+    border-radius: 30px;
 }
 
 .text {
-    font-size: 30px;
-}
+    font-size: 17px;
+    height: 50px;
+    width: 70%;
+  }
 
-.submit-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    height: 100px;
-    width: 600px;
-    background-color: red;
+  a {
     color: white;
-    border: none;
     text-decoration: none;
-}
+  }
 
-.sign_in {
+  .submit_btn {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: hsl(233, 12%, 13%);
+    color: white;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+  }
+
+  .submit_btn:hover {
+    cursor: pointer;
+    border: 2px solid hsl(233, 12%, 13%);
+    background-color: transparent;
+  }
+
+  .sign_in {
+    display: flex;
     gap: 20px;
-    color: white;
-    text-decoration: none;
-}
+  }
+
+  @media screen and (max-width: 650px) {
+    body {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .bg_image {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .box {
+        background-color: hsla(12, 88%, 59%, 0.461);
+    }
+  }
