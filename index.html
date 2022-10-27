@@ -65,8 +65,12 @@
                 </ul>
             </div>
             <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                    <p>prev</p>
+                </button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                    <p>next</p>
+                </button>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
@@ -87,6 +91,10 @@
                         focusAt: 'center',
                         gap: 10,
                         perView: 1.8
+                    },
+                    355: {
+                        perView: 1,
+                        gap: 5
                     }
                 }
             }).mount();
@@ -101,12 +109,16 @@
             <div class="comment">
                 <h3><span>Flixia</span> is data friendly, you can download favorite movies with a little amount of data,
                     so as to keep track of your movies</h3>
+                <P><span>Flixia</span> is data friendly, you can download favorite movies with a little amount of data,
+                    so as to keep track of your movies</P>
             </div>
         </div>
         <div class="ads">
             <div class="comment">
                 <h3>On <span>Flixia</span>, there is no pop-up ads disturbance, you would enjoy a stressless and
                     enjoyable time exploring our site</h3>
+                <P>On <span>Flixia</span>, there is no pop-up ads disturbance, you would enjoy a stressless and
+                    enjoyable time exploring our site</P>
             </div>
             <div class="ads_image">
                 <img src="/images/ads.webp" alt="">
@@ -118,13 +130,19 @@
             </div>
             <div class="comment">
                 <h3>Run into a new world of fantasy, comedy, action and so on, enjoying quality time with family on
-                    <span>Flixia</span>.</h3>
+                    <span>Flixia</span>.
+                </h3>
+                <P>Run into a new world of fantasy, comedy, action and so on, enjoying quality time with family on
+                    <span>Flixia</span>.
+                </P>
             </div>
         </div>
         <div class="devices">
             <div class="comment">
                 <h3><span>Flixia</span> on the go, as you can stream on any device of your choice, do not be limited,
                     try flixia!</h3>
+                <P><span>Flixia</span> on the go, as you can stream on any device of your choice, do not be limited,
+                    try flixia!</P>
             </div>
             <div class="devices_image">
                 <img src="/images/devices.jpg" alt="">
@@ -162,8 +180,10 @@
         </div>
 
         <div class="third-footer">
-            <input type="email" placeholder="give us your feedbacks">
-            <div class="go">Email Us</div>
+            <input class="third-footer__text" type="email" placeholder="give us your feedbacks">
+            <div class="go">
+                <p>Email Us</p>
+            </div>
         </div>
 
         <p class="copyright">&copy;Copyright 2022 flixia. All Rights Reserved</p>
