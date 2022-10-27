@@ -26,11 +26,15 @@ header {
     position: relative;
 }
 
-header #image__collage{
+header .image__collage{
     position: absolute;
     z-index: -1;
     height: 100%;
     width: 100%;
+}
+
+header .image__collage__two {
+  display: none;
 }
 
 nav {
@@ -42,13 +46,41 @@ nav {
     background-color: rgba(0, 0, 0, 0.671);
 }
 
+.menu {
+  display: none;
+}
+
+.login_sign-up {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  width: 150px;
+}
+
+.login_sign-up a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .text {
   font-size: 17px;
+  height: 50px;
   width: 500px;
 }
 
-.logo {
+.logo-one {
   width: 150px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
 }
 
 .seven__days__trial {
@@ -62,7 +94,6 @@ nav {
     height: 75px;
     width: 500px;
     background-color: rgba(0, 0, 0, 0.799);
-    margin: 20px 0 20px 29%;
 }
 
 .seven__days__trial h3 {
@@ -259,7 +290,7 @@ input {
     gap: 100px;
 }
 
-.logo {
+.logo-two {
     width: 150px;
 }
 
@@ -321,7 +352,120 @@ input {
 
 .copyright {
     position: absolute;
-    left: 75%;
+    left: 70%;
     top: 70%;
     color: hsl(227, 12%, 61%);
+}
+
+@media screen and (max-width: 650px){
+  .header {
+    height: 500px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  header .image__collage {
+    display: none;
+  }
+
+  header .image__collage__two {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+
+  .logo-one {
+    width: 100px;
+  }
+
+  .text {
+      height: 10px;
+      width: 300px;
+    }
+
+  .menu {
+    display: block;
+  }
+
+  .seven__days__trial {
+    height: 70px;
+    width: 350px;
+  }
+
+  .seven__days__trial h3 {
+    font-size: 17px;
+  }
+
+  .seven__days__trial a {
+    font-size: 15px;
+  }
+
+  .glide__slide img {
+    height: 400px;
+  }
+
+  .glide__slide h2 {
+    margin-right: -60px;
+  }
+
+  .main h2 {
+    font-size: 30px;
+  }
+
+  .data,
+  .ads,
+  .tv,
+  .devices {
+    height: 250px;
+  }
+
+  .login_sign-up {
+    display: none;
+  }
+
+  footer {
+    align-items: center;
+    gap: 50px;
+    height: 600px;
+    flex-direction: column;
+  }
+
+  .first-footer {
+    align-items: center;
+    gap: 30px;
+  }
+
+  .second-footer {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .second-footer ul li a {
+    font-size: 20px;
+  }
+
+  .logo-two {
+    width: 150px;
+  }
+
+  .social-media {
+    gap: 50px;
+  }
+
+  .social-media img {
+    width: 30px;
+  }
+
+  .third-footer {
+  }
+
+  .copyright {
+    top: 80%;
+    left: 12%;
+    font-size: 25px;
+  }
 }
