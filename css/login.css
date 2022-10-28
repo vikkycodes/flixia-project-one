@@ -25,46 +25,55 @@ h3 {
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 50%;
-}
-
-.box {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    height: 90%;
-    width: 70%;
+    height: 100%;
+    width: 50%;
     border-radius: 10px;
-    background-color: hsl(12, 88%, 59%);
+}
+
+.bg_color {
+    height: 100%;
+    width: 100%;
+    background-color: hsla(233, 12%, 13%, 0.541);
+    position: absolute;
+    z-index: -1;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 70%;
-}
-
-input {
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
-    background: transparent;
-    color: white;
-    padding: 0 70px 0 20px;
-    border: 3px solid white;
-    border-radius: 30px;
+    gap: 10px;
+    width: 100%;
 }
 
-.text {
+.input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 0 20px;
     font-size: 17px;
     height: 50px;
     width: 70%;
+  }
+
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.74);
+  }
+
+  button {
+    height: 50px;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(233, 12%, 13%);
+    color: white;
+    font-size: 17px;
   }
 
   a {
@@ -72,13 +81,13 @@ input {
     text-decoration: none;
   }
 
-  .submit_btn {
+  .login_btn {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    width: 120px;
-    border-radius: 30px;
+    width: 80%;
+    border-radius: 10px;
     background-color: hsl(233, 12%, 13%);
     color: white;
     font-weight: 600;

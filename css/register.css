@@ -26,22 +26,22 @@ h3 {
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 50%;
-}
-
-.box {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    height: 90%;
-    width: 70%;
+    height: 100%;
+    width: 50%;
     border-radius: 10px;
-    background-color: hsl(12, 88%, 59%);
+    position: relative;
+}
+
+.bg_color {
+    height: 100%;
+    width: 100%;
+    background-color: hsla(233, 12%, 13%, 0.541);
+    position: absolute;
+    z-index: -1;
 }
 
 .logo {
@@ -51,25 +51,34 @@ h3 {
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 70%;
-}
-
-input {
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
-    background: transparent;
-    color: white;
-    padding: 0 70px 0 20px;
-    border: 3px solid white;
-    border-radius: 30px;
+    gap: 10px;
+    width: 100%;
 }
 
-.text {
+.input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 0 20px;
     font-size: 17px;
     height: 50px;
     width: 70%;
+  }
+
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.74);
+  }
+
+  button {
+    height: 50px;
+    width: 80%;
+    border: 2px solid hsl(233, 12%, 13%);
+    border-radius: 10px;
+    background-color: hsl(233, 12%, 13%);
+    color: white;
+    font-size: 17px;
   }
 
   a {
@@ -77,20 +86,23 @@ input {
     text-decoration: none;
   }
 
-  .submit_btn {
+  .sign_up_btn {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    width: 120px;
-    border-radius: 30px;
+    width: 80%;
+    border-radius: 10px;
     background-color: hsl(233, 12%, 13%);
-    color: white;
     font-weight: 600;
     transition: 0.5s ease-in-out;
   }
 
-  .submit_btn:hover {
+  .sign_up_btn h3 {
+    color: hsl(12, 88%, 59%);
+  }
+
+  .sign_up_btn:hover {
     cursor: pointer;
     border: 2px solid hsl(233, 12%, 13%);
     background-color: transparent;
@@ -98,7 +110,14 @@ input {
 
   .sign_in {
     display: flex;
+    align-items: center;
     gap: 20px;
+  }
+
+  span {
+    font-size: 20px;
+    font-weight: bold;
+    color: hsl(12, 88%, 59%);
   }
 
 
@@ -116,9 +135,5 @@ input {
 
     .container {
         width: 100%;
-    }
-
-    .box {
-        background-color: hsla(12, 88%, 59%, 0.461);
     }
   }

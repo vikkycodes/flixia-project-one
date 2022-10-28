@@ -13,20 +13,17 @@
 <body>
     <img class="bg_image" src="/images/the-chosen.jpg" alt="">
     <div class="container">
-        <div class="box">
-            <h2>Welcome Back!</h2>
-            <form>
-                <input type="email" class="text" placeholder="Email Address">
-                <input type="password" class="text" placeholder="Password">
-            </form>
-            <a href="/index.html" class="submit_btn">
-                <h3>LOGIN</h3>
-            </a>
-            <a class="sign_in" href="/register.html">
-                <h3>Create An Account</h3>
-                <h3>Forgot Password?</h3>
-            </a>
-        </div>
+        <div class="bg_color"></div>
+        <h2>Welcome Back!</h2>
+        <form action="http://127.0.0.1:5500/index.html" method="POST">
+            <input type="email" class="input" placeholder="Email Address" name="email" required autofocus>
+            <input type="password" class="input" placeholder="Password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <a class="sign_in" href="/register.html">
+            <h3>Create An Account</h3>
+            <h3>Forgot Password?</h3>
+        </a>
     </div>
 </body>
 

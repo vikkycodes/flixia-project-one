@@ -46,7 +46,11 @@ nav {
     background-color: rgba(0, 0, 0, 0.671);
 }
 
-.menu {
+#menu {
+  display: none;
+}
+
+.hamburger_icon {
   display: none;
 }
 
@@ -406,8 +410,27 @@ input {
       font-size: 17px;
     }
     
-  .menu {
+  .hamburger_icon {
     display: block
+  }
+
+  #menu { 
+    display: flex;
+    flex-direction: column;
+    height: 90%;    
+    background-color: hsl(233, 12%, 13%);
+  }
+
+  #menu ul li {
+    list-style: none;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  #menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
   }
     
   .seven__days__trial a {
@@ -461,6 +484,7 @@ input {
     box-shadow: none;
     height: 203px;
     width: 100%;
+    border-radius: 10px 10px 0 0;
   }
 
   .comment {
