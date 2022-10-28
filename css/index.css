@@ -368,7 +368,7 @@ input {
     color: hsl(227, 12%, 61%);
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 600px){
   header {
     height: 500px;
   }
@@ -441,8 +441,38 @@ input {
   .ads,
   .tv,
   .devices {
-    height: 250px;
+    flex-direction: column;
+    height: auto;
+    padding: 15px 15px 20px;
+    box-shadow: none
   }
+
+  .data_image,
+  .ads_image,
+  .tv_image,
+  .devices_image {
+    width: 100%;
+  }
+
+  .data_image img, 
+  .ads_image img,
+  .tv_image img,
+  .devices_image img {
+    box-shadow: none;
+    height: 203px;
+    width: 100%;
+  }
+
+  .comment {
+    width: 100%;
+    padding: 0;
+  }
+
+  .ads, .devices {
+    flex-direction: column-reverse;
+  }
+
+
 
   .login_sign-up {
     display: none;
@@ -453,6 +483,7 @@ input {
     gap: 50px;
     height: 600px;
     flex-direction: column;
+    padding: 50px 20px;
   }
 
   .first-footer {
@@ -474,6 +505,19 @@ input {
     width: 150px;
   }
 
+  .third-footer {
+    width: 100%;
+    }
+
+  .third_footer_input {
+    width: 90%;
+    height: 40px;
+  }
+
+  .email_us_btn {
+    height: 40px;
+  }
+
   .social-media {
     gap: 50px;
   }
@@ -490,8 +534,10 @@ input {
 
   .copyright {
     top: 85%;
-    left: 20%;
-    font-size: 20px;
+    left: 0;
+    position: static;
+    align-self: center;
+    font-size: 14px;
   }
 }
 
