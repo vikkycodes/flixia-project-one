@@ -374,7 +374,7 @@ input {
 
 @media screen and (max-width: 600px){
   header {
-    height: 500px;
+    height: 400px;
   }
 
   h3 {
@@ -415,16 +415,19 @@ input {
   }
 
   #menu { 
-    display: flex;
-    flex-direction: column;
     height: 90%;    
-    background-color: hsl(233, 12%, 13%);
   }
 
-  #menu ul li {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: hsl(233, 12%, 13%);
+  }
+
+  ul li {
     list-style: none;
-    margin-top: 50px;
-    margin-left: 20px;
   }
 
   #menu ul li a {
@@ -573,7 +576,7 @@ input {
   }
 
   header {
-    height: 400px;
+    height: 300px;
   }
 
   h2 {
@@ -594,6 +597,10 @@ input {
 
   .box {
     height: 100px;
+  }
+
+  #menu {
+    height: 100%;
   }
   
   .seven__days__trial {
