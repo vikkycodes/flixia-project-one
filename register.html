@@ -14,12 +14,14 @@
     <img class="bg_image" src="/images/the-pirates.jpg" alt="">
     <div class="container">
         <div class="bg_color"></div>
-        <img class="logo" src="/images/logo.PNG" alt="">
-        <form>
-            <input type="text" class="input" placeholder="Full Name" autofocus required>
-            <input type="email" class="input" placeholder="Email Address" required>
-            <input type="password" class="input" placeholder="Password" required>
-            <input type="password" class="input" placeholder="Confirm password" required>
+        <div class="header">
+            <img class="logo" src="/images/logo.PNG" alt="">
+            <a href="/index.html"><img src="/images/icons8-home.svg" alt=""></a>
+        </div>
+        <form action="https://formspree.io/f/mqkjynnb" method="post">
+            <input type="text" class="input" placeholder="Full Name" autofocus required name="name">
+            <input type="email" class="input" placeholder="Email Address" required name="email">
+            <input type="password" class="input" placeholder="Password" required name="password">
             <button type="submit">Register</button>
         </form>
         <div class="sign_in">
