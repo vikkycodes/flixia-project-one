@@ -397,7 +397,6 @@ form button:hover {
 
   nav {
     height: 70px;
-    background-color: hsl(233, 12%, 13%);
     position: fixed;
     right: 0;
     left: 0;
@@ -426,12 +425,7 @@ form button:hover {
   }
 
   #menu { 
-    margin-top: 70px;
-    height: 50%;    
-    width: 50%;
-    position: fixed;
-    right: 0;
-    z-index: 1;
+    height: 90%;    
   }
 
   #menu ul {
@@ -439,9 +433,7 @@ form button:hover {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    width: 100%;
     background: hsl(233, 12%, 13%);
-    transition: 5s ease-in-out;
   }
 
   ul li {
@@ -451,7 +443,7 @@ form button:hover {
   #menu ul li a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
   }
     
   .seven__days__trial a {
