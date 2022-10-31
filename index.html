@@ -110,20 +110,18 @@
                         perView: 1.6
                     },
                     375: {
-                        perView: 1,
+                        perView: 0.95,
                     }
                 }
             }).mount();
 
-            var a;
             function show_hide() {
-                if (a == 1) {
+                if (document.getElementById("menu").style.display === "inline") {
                     document.getElementById("menu").style.display = "none";
-                    return (a = 0);
                 } else {
                     document.getElementById("menu").style.display = "inline";
-                    return (a = 1);
                 }
+                return
             }
         </script>
     </div>
